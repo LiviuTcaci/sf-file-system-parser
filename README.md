@@ -103,27 +103,3 @@ $ ./a1 extract path=example.sf section=1 line=2
 SUCCESS
 second line
 ```
-
-### List Example
-```
-$ ./a1 list path=./
-SUCCESS
-./a1.c
-./a1_data.json
-./example.sf
-./tester.py
-```
-
-## Testing
-
-Run the included tester script to verify functionality:
-```
-python3 tester.py
-```
-
-Advanced testing options:
-```
-python3 tester.py --verbose     # For detailed test output
-python3 tester.py --test parse_1 # To run a specific test
-python3 tester.py --valgrind    # To check for memory leaks
-```
